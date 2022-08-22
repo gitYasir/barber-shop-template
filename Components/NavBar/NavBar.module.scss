@@ -6,19 +6,31 @@
 
 .navBar {
   @include disFlex;
-  z-index: 1;
   justify-content: space-between;
   position: fixed;
-  background-color: rgba(255, 255, 255);
-  color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.591);
+  color: rgb(255, 255, 255);
   width: 100%;
+  height: auto;
+  .logo {
+    @include disFlex;
+    height: 100%;
+    max-width: 20%;
+    margin-left: 10px;
+    border-radius: 15%;
+    &:hover {
+      color: white;
+      background-color: skyblue;
+      cursor: pointer;
+    }
+  }
   .navOptions {
     @include disFlex;
     justify-content: space-evenly;
     width: 80%;
     h4 {
       padding: 30px;
-      border-radius: 25%;
+      border-radius: 15%;
       &:hover {
         color: white;
         background-color: skyblue;

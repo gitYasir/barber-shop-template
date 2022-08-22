@@ -1,10 +1,20 @@
+import Image from "next/image";
 import Link from "next/link";
 import css from "./NavBar.module.scss";
 
 function NavBar() {
   return (
     <div className={css.navBar}>
-      <div className={css.logo}>Logo Pic</div>
+      <div className={css.logo}>
+        <Link href={"#"}>
+          <Image
+            src={"/icons/barber-pole-svgrepo-com.svg"}
+            alt={"Shop Logo"}
+            width={"100%"}
+            height={"100%"}
+          />
+        </Link>
+      </div>
       <div className={css.navOptions}>
         <Link href={"#"}>
           <h4>Home</h4>
