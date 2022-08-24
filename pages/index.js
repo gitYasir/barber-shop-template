@@ -1,4 +1,5 @@
 import Head from "next/head";
+import HomePage from "../Components/HomePage/HomePage";
 import NavBar from "../Components/NavBar/NavBar";
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
         <link rel="icon" href="/icons/barber-pole-svgrepo-com.svg" />
       </Head>
       <NavBar />
+      <HomePage />
     </>
   );
 }
