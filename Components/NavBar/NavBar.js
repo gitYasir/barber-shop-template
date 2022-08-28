@@ -1,11 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 import css from "./NavBar.module.scss";
 
 function NavBar() {
+  const [state, setState] = useState(false);
+  function toggleMenu() {
+    setState(!state);
+  }
   return (
-    <div className={css.navBar}>
-      <div className={css.logo}>
+    <nav className={css.navBar}>
+      <div className={css.logoArea}>
         <Link href={"#"}>
           <Image
             src={"/icons/barber-pole-svgrepo-com.svg"}
@@ -15,27 +20,53 @@ function NavBar() {
           />
         </Link>
       </div>
-      <div className={css.navOptions}>
-        <Link href={"#"}>
-          <h4>Home</h4>
-        </Link>
-        <Link href={"#"}>
-          <h4>Services</h4>
-        </Link>
-        <Link href={"#"}>
-          <h4>About Us</h4>
-        </Link>
-        <Link href={"#"}>
-          <h4>Price List</h4>
-        </Link>
-        <Link href={"#"}>
-          <h4>Gallery</h4>
-        </Link>
-        <Link href={"#"}>
-          <h4>Contact Us</h4>
-        </Link>
+      <Link href={"#"}>
+        <a
+          href="#"
+          className={state ? css.span : `${css.span} ${css.active}`}
+          id={"menu"}
+          onClick={toggleMenu}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </Link>
+      <div className={css.menu} id={"menuOptions"}>
+        <ul>
+          <li>
+            <Link href={"#"}>
+              <a>Home</a>
+            </Link>
+          </li>
+          <li>
+            <Link href={"#"}>
+              <a>Services</a>
+            </Link>
+          </li>
+          <li>
+            <Link href={"#"}>
+              <a>About Us</a>
+            </Link>
+          </li>
+          <li>
+            <Link href={"#"}>
+              <a>Price List</a>
+            </Link>
+          </li>
+          <li>
+            <Link href={"#"}>
+              <a>Gallery</a>
+            </Link>
+          </li>
+          <li>
+            <Link href={"#"}>
+              <a>Contact Us</a>
+            </Link>
+          </li>
+        </ul>
       </div>
-    </div>
+    </nav>
   );
 }
 
