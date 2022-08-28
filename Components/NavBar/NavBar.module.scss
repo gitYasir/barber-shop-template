@@ -41,9 +41,9 @@
           text-decoration: none;
           color: white;
           padding: 1rem;
+          border-radius: 5%;
           &:hover {
             background-color: skyblue;
-            border-radius: 5%;
           }
         }
       }
@@ -71,7 +71,7 @@
         a {
           padding: 0.5rem 1rem;
           &:hover {
-            border-radius: none;
+            border-radius: 0;
             background-color: red;
           }
         }
