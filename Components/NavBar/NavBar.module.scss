@@ -34,29 +34,19 @@
       @include disFlex;
       margin: 0;
       padding: 0;
-    }
-    li {
-      list-style: none;
-      a {
-        display: block;
-        text-decoration: none;
-        color: white;
-        padding: 1rem;
-        &:hover {
-          background-color: skyblue;
-          border-radius: 5%;
+      li {
+        list-style: none;
+        a {
+          display: block;
+          text-decoration: none;
+          color: white;
+          padding: 1rem;
+          &:hover {
+            background-color: skyblue;
+            border-radius: 5%;
+          }
         }
       }
-    }
-  }
-  h4 {
-    @media (width<700px) {
-      background-color: red;
-    }
-    margin: 3px;
-    &:hover {
-      color: skyblue;
-      cursor: pointer;
     }
   }
 }
@@ -70,7 +60,7 @@
     }
   }
   .menu {
-    // display: none;
+    display: none;
     width: 100%;
     ul {
       width: 100%;
@@ -81,13 +71,14 @@
         a {
           padding: 0.5rem 1rem;
           &:hover {
-            border-radius: 0;
+            border-radius: none;
+            background-color: red;
           }
         }
       }
     }
-    .active {
-      display: flex;
-    }
+  }
+  .active {
+    display: flex;
   }
 }

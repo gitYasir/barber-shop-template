@@ -21,18 +21,13 @@ function NavBar() {
         </Link>
       </div>
       <Link href={"#"}>
-        <a
-          href="#"
-          className={state ? css.span : `${css.span} ${css.active}`}
-          id={"menu"}
-          onClick={toggleMenu}
-        >
+        <a href="#" className={css.span} onClick={toggleMenu}>
           <span></span>
           <span></span>
           <span></span>
         </a>
       </Link>
-      <div className={css.menu} id={"menuOptions"}>
+      <div className={state ? `${css.menu} ${css.active}` : css.menu}>
         <ul>
           <li>
             <Link href={"#"}>
