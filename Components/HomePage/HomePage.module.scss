@@ -16,9 +16,8 @@
   @include disFlex;
   .subContainer {
     @include disFlex;
-    height: 80%;
+    height: 100%;
     width: 100%;
-    margin-top: 80px;
-    background-color: red;
+    margin-top: 13rem;
   }
 }
