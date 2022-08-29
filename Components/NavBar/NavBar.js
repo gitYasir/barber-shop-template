@@ -11,13 +11,15 @@ function NavBar() {
   return (
     <nav className={css.navBar}>
       <div className={css.logoArea}>
-        <Link href={"#"}>
-          <Image
-            src={"/icons/barber-pole-svgrepo-com.svg"}
-            alt={"Shop Logo"}
-            width={"100%"}
-            height={"100%"}
-          />
+        <Link href={"/"}>
+          <a>
+            <Image
+              src={"/icons/barber-pole-svgrepo-com.svg"}
+              alt={"Shop Logo"}
+              width={"100%"}
+              height={"100%"}
+            />
+          </a>
         </Link>
       </div>
       <Link href={"#"}>
