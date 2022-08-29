@@ -34,7 +34,7 @@ function NavBar() {
       <div className={state ? `${css.menu} ${css.active}` : css.menu}>
         <ul>
           <li>
-            <Link href={"#"}>
+            <Link href={"/"}>
               <a>Home</a>
             </Link>
           </li>
