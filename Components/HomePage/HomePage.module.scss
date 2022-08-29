@@ -1,3 +1,9 @@
+@mixin disFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .mainContainer {
   height: 100vh;
   width: 100vw;
@@ -6,4 +12,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+
+  @include disFlex;
+  .subContainer {
+    @include disFlex;
+    height: 80%;
+    width: 100%;
+    margin-top: 80px;
+    background-color: red;
+  }
 }
