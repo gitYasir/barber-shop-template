@@ -4,7 +4,7 @@ function HomePage() {
   return (
     <div className={css.mainContainer}>
       <div className={css.subContainer}>
-        <a href="11111">
+        <a href="tel:11111">
           <button>Call</button>
         </a>
       </div>
