@@ -20,17 +20,18 @@ function HomePage() {
               height={400}
               width={300}
               priority
+              className={css.pic}
             />
           </div>
           <div className={css.address}>
             <address>
               234 Barber Rd <br />
-              Birmingham <br />
-              B43 9IQ
+              Barbersville <br />
+              B42 8ER
             </address>
             <div className={css.directionCallBtn}>
               <a
-                href="https://goo.gl/maps/46mwj4GxCN6kBYis6"
+                href="https://goo.gl/maps/r1nnDo8TFBpFJX9cA"
                 target="_blank"
                 rel="noreferrer"
               >
