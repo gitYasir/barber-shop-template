@@ -44,7 +44,7 @@ function NavBar() {
             </Link>
           </li>
           <li>
-            <Link href={"#"}>
+            <Link href={"/about"}>
               <a>About Us</a>
             </Link>
           </li>
