@@ -2,8 +2,8 @@ import css from "./About.module.scss";
 
 import React from "react";
 
-function About() {
+function AboutUs() {
   return <div>About</div>;
 }
 
-export default About;
+export default AboutUs;
