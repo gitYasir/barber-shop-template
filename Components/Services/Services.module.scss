@@ -1,0 +1,33 @@
+@mixin disFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  @include disFlex;
+  background-color: gray;
+  padding-top: 104px;
+  height: auto;
+  width: 100vw;
+  .subContainer {
+    @include disFlex;
+    background-color: gray;
+    flex-wrap: wrap;
+    max-width: 80%;
+    height: auto;
+    width: 100vw;
+    .serviceContainer {
+      @include disFlex;
+      margin: 10px;
+      .pic {
+        margin: 10px;
+      }
+      .info {
+        @include disFlex;
+        width: 240px;
+        margin: 10px;
+      }
+    }
+  }
+}

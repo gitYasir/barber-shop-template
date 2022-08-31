@@ -3,9 +3,9 @@ import Image from "next/image";
 
 function Service({ pic, alt, info, price }) {
   return (
-    <div className={css.container}>
+    <div className={css.serviceContainer}>
       <div className={css.pic}>
-        <Image src={pic} alt={alt} height={100} width={100} />
+        <Image src={pic} alt={alt} height={140} width={140} />
       </div>
       <div className={css.info}>
         <p>{info}</p>
