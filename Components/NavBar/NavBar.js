@@ -42,22 +42,17 @@ function NavBar() {
           </li>
           <li>
             <Link href={"/services"}>
-              <a>Services</a>
-            </Link>
-          </li>
-          <li>
-            <Link href={"/about"}>
-              <a>About Us</a>
-            </Link>
-          </li>
-          <li>
-            <Link href={"#"}>
-              <a>Price List</a>
+              <a>Services & Prices</a>
             </Link>
           </li>
           <li>
             <Link href={"#"}>
               <a>Gallery</a>
+            </Link>
+          </li>
+          <li>
+            <Link href={"/about"}>
+              <a>About Us</a>
             </Link>
           </li>
           <li>
