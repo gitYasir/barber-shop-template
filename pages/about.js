@@ -1,6 +1,6 @@
 import NavBar from "../Components/NavBar/NavBar";
 
-function About() {
+function about() {
   return (
     <>
       <NavBar />
@@ -8,4 +8,4 @@ function About() {
   );
 }
 
-export default About;
+export default about;

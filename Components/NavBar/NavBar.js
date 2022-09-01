@@ -46,7 +46,7 @@ function NavBar() {
             </Link>
           </li>
           <li>
-            <Link href={"#"}>
+            <Link href={"/gallery"}>
               <a>Gallery</a>
             </Link>
           </li>
@@ -56,7 +56,7 @@ function NavBar() {
             </Link>
           </li>
           <li>
-            <Link href={"#"}>
+            <Link href={"/contact"}>
               <a>Contact Us</a>
             </Link>
           </li>
