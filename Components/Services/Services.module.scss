@@ -30,6 +30,8 @@
       }
       .picArea {
         margin: 10px;
+        min-width: 100px;
+        min-height: 100px;
         .pic {
           border-radius: 10px;
         }
