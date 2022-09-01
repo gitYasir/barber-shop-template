@@ -1,23 +1,43 @@
+import { useState } from "react";
 import data from "./data";
+import Modal from "./Modal";
 import Service from "./Service";
 import css from "./Services.module.scss";
 
 function Services() {
+  const [modal, setModal] = useState(false);
+  const [modalData, setModalData] = useState({});
+
+  function changeModal() {
+    setModal(!modal);
+  }
+
+  function setDataForModal(item) {
+    setModalData(item);
+  }
   return (
     <div className={css.container}>
       <div className={css.subContainer}>
         {data.map((item, i) => {
           return (
-            <Service
-              pic={item.pic}
-              alt={item.alt}
-              info={item.info}
-              price={item.price}
+            <div
               key={i}
-            />
+              onClick={() => {
+                changeModal();
+                setDataForModal(item);
+              }}
+            >
+              <Service
+                pic={item.pic}
+                alt={item.alt}
+                info={item.info}
+                price={item.price}
+              />
+            </div>
           );
         })}
       </div>
+      {modal && <Modal onClick={changeModal} data={modalData} />}
     </div>
   );
 }

@@ -5,7 +5,8 @@
 }
 
 .container {
-  @include disFlex;
+  display: flex;
+  justify-content: center;
   background-color: gray;
   padding-top: 104px;
   height: auto;
