@@ -3,9 +3,8 @@ import css from "./Modal.module.scss";
 
 function Modal({ onClick, data }) {
   return (
-    <div className={css.modalContainer}>
+    <div className={css.modalContainer} onClick={onClick}>
       <div className={css.modal}>
-        <h1 onClick={onClick}>X</h1>
         <div className={css.picArea}>
           <Image
             src={data.pic}
