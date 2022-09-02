@@ -1,0 +1,27 @@
+@mixin disFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.galleryContainer {
+  @include disFlex;
+  height: auto;
+  width: 100vw;
+  padding-top: 104px;
+  background-color: rgba(0, 0, 0, 0.904);
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  .picArea {
+    @include disFlex;
+    flex-direction: column;
+    color: white;
+    .picture {
+      margin: 100px;
+      border-radius: 10px;
+    }
+  }
+}
+
+@media (max-width: 653px) {
+}
