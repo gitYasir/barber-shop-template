@@ -22,9 +22,9 @@ function NavBar() {
           </a>
         </Link>
       </div>
-      <Link href={"#"}>
+      <Link href={""}>
         <a
-          href="#"
+          href=""
           className={state ? `${css.span} ${css.cross}` : css.span}
           onClick={toggleMenu}
         >

@@ -3,6 +3,7 @@ import data from "./data";
 import Modal from "./Modal";
 import Service from "./Service";
 import css from "./Services.module.scss";
+import Head from "next/head";
 
 function Services() {
   const [modal, setModal] = useState(false);
@@ -17,6 +18,11 @@ function Services() {
   }
   return (
     <div className={css.container}>
+      <Head>
+        <title>Services and Prices</title>
+        <meta name="description" content="Services and Prices" />
+        <link rel="icon" href="/icons/barber-pole-svgrepo-com.svg" />
+      </Head>
       <div className={css.subContainer}>
         {data.map((item, i) => {
           return (

@@ -1,10 +1,16 @@
 import pics from "./galleryData";
 import Image from "next/image";
 import css from "./Gallery.module.scss";
+import Head from "next/head";
 
 function Gallery() {
   return (
     <div className={css.galleryContainer}>
+      <Head>
+        <title>Gallery</title>
+        <meta name="description" content="Haircuts Gallery" />
+        <link rel="icon" href="/icons/barber-pole-svgrepo-com.svg" />
+      </Head>
       {pics.map((pic, i) => {
         return (
           <div key={pic} className={css.picArea}>
