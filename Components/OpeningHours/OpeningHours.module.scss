@@ -1,0 +1,47 @@
+@mixin disFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainContainer {
+  @include disFlex;
+  flex-direction: column;
+  height: auto;
+  width: 250px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  margin: 25px 25px;
+  .header {
+    background-color: rgba(128, 128, 128, 0.097);
+    padding: 5px;
+    border-bottom: 1px solid gray;
+    h3 {
+      padding: 0;
+      margin: 0;
+      color: skyblue;
+    }
+    h1 {
+      padding: 0;
+      margin: 0;
+    }
+  }
+  table {
+    width: 250px;
+    border-collapse: collapse;
+    tbody {
+      tr {
+        padding: 3px;
+        border-bottom: 1px solid gray;
+        th {
+          padding: 10px;
+          text-align: start;
+        }
+
+        td {
+          padding: 10px;
+          text-align: end;
+        }
+      }
+    }
+  }
+}
