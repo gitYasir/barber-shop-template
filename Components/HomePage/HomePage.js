@@ -1,28 +1,22 @@
 import css from "./HomePage.module.scss";
 import Image from "next/image";
+import OpeningHours from "../OpeningHours/OpeningHours";
 
 function HomePage() {
   return (
     <div className={css.mainContainer}>
-      <Image
-        src={"/pics/agustin-fernandez-Znyjl9pbaUs-unsplash.jpg"}
-        alt={""}
-        layout="fill"
-        priority
-        objectFit="cover"
-      />
       <div className={css.subContainer}>
+        <div className={css.shopImage}>
+          <Image
+            src={"/pics/maxime-bouffard-SQ0-gKh5Vyk-unsplash.jpg"}
+            alt={""}
+            layout={"fill"}
+            priority
+            className={css.pic}
+          />
+        </div>
+        <OpeningHours />
         <div className={css.imgAndAddress}>
-          <div className={css.shopImage}>
-            <Image
-              src={"/pics/maxime-bouffard-SQ0-gKh5Vyk-unsplash.jpg"}
-              alt={""}
-              height={400}
-              width={300}
-              priority
-              className={css.pic}
-            />
-          </div>
           <div className={css.address}>
             <address>
               234 Barber Rd <br />
