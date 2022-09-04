@@ -49,7 +49,7 @@ const ContactUs = () => {
       </Head>
       <div className={css.subContainer}>
         <div className={css.title}>
-          <h3>Contact Me</h3>
+          <h3>Contact Us</h3>
         </div>
         <div className={css.formContainer}>
           <form ref={form} onSubmit={sendEmail} className={css.form}>
@@ -79,6 +79,10 @@ const ContactUs = () => {
             </button>
             <ToastContainer theme="dark" />
           </form>
+          <p>
+            Please get in contact with us regarding any queries and we will get
+            back to you ASAP!
+          </p>
         </div>
       </div>
     </div>
