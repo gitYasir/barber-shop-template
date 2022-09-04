@@ -37,8 +37,24 @@
           display: grid;
           grid-template-columns: 1fr 1fr;
           column-gap: 0.5rem;
+          grid-template-areas:
+            "name email"
+            "number number";
+
           @media (max-width: 700px) {
-            grid-template-columns: 1fr;
+            grid-template-areas:
+              "name name"
+              "email email"
+              "number number";
+          }
+          .name {
+            grid-area: name;
+          }
+          .email {
+            grid-area: email;
+          }
+          .number {
+            grid-area: number;
           }
         }
         input {

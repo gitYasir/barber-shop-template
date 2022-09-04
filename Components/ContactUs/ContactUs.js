@@ -59,19 +59,22 @@ const ContactUs = () => {
                 name="user_name"
                 placeholder="Name*"
                 required
+                className={css.name}
               />
               <input
                 type="email"
                 name="user_email"
                 placeholder="Email*"
                 required
+                className={css.email}
               />
+
               <input
                 type="text"
-                name="company_name"
-                placeholder="Company Name"
+                name="number"
+                placeholder="Number"
+                className={css.number}
               />
-              <input type="text" name="number" placeholder="Number" />
             </div>
             <textarea name="message" placeholder="Message*" required />
             <button type="submit" value="Send">
