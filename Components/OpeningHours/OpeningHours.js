@@ -4,7 +4,7 @@ function OpeningHours() {
   const date = new Date();
   const weekday = [
     "Sunday",
-    "day",
+    "Monday",
     "Tuesday",
     "Wednesday",
     "Thursday",
@@ -22,34 +22,83 @@ function OpeningHours() {
         </div>
         <table>
           <tbody>
-            <tr>
-              <th>Monday</th>
-              <td>10AM-6PM</td>
-            </tr>
-            <tr>
-              <th>Tuesday</th>
-              <td>10AM-6PM</td>
-            </tr>
-            <tr>
-              <th>Wednesday</th>
-              <td>10AM-6PM</td>
-            </tr>
-            <tr>
-              <th>Thursday</th>
-              <td>10AM-6PM</td>
-            </tr>
-            <tr>
-              <th>Friday</th>
-              <td>10AM-6PM</td>
-            </tr>
-            <tr>
-              <th>Saturday</th>
-              <td>12AM-8PM</td>
-            </tr>
-            <tr>
-              <th>Sunday</th>
-              <td>12AM-6PM</td>
-            </tr>
+            {day === "Monday" ? (
+              <tr className={css.curDay}>
+                <th>Monday</th>
+                <td>10AM-6PM</td>
+              </tr>
+            ) : (
+              <tr>
+                <th>Monday</th>
+                <td>10AM-6PM</td>
+              </tr>
+            )}
+            {day === "Tuesday" ? (
+              <tr className={css.curDay}>
+                <th>Tuesday</th>
+                <td>10AM-6PM</td>
+              </tr>
+            ) : (
+              <tr>
+                <th>Tuesday</th>
+                <td>10AM-6PM</td>
+              </tr>
+            )}
+            {day === "Wednesday" ? (
+              <tr className={css.curDay}>
+                <th>Wednesday</th>
+                <td>10AM-6PM</td>
+              </tr>
+            ) : (
+              <tr>
+                <th>Wednesday</th>
+                <td>10AM-6PM</td>
+              </tr>
+            )}
+            {day === "Thursday" ? (
+              <tr className={css.curDay}>
+                <th>Thursday</th>
+                <td>10AM-6PM</td>
+              </tr>
+            ) : (
+              <tr>
+                <th>Thursday</th>
+                <td>10AM-6PM</td>
+              </tr>
+            )}
+            {day === "Friday" ? (
+              <tr className={css.curDay}>
+                <th>Friday</th>
+                <td>10AM-6PM</td>
+              </tr>
+            ) : (
+              <tr>
+                <th>Friday</th>
+                <td>10AM-6PM</td>
+              </tr>
+            )}
+            {day === "Saturday" ? (
+              <tr className={css.curDay}>
+                <th>Saturday</th>
+                <td>10AM-6PM</td>
+              </tr>
+            ) : (
+              <tr>
+                <th>Saturday</th>
+                <td>12AM-6PM</td>
+              </tr>
+            )}
+            {day === "Sunday" ? (
+              <tr className={css.curDay}>
+                <th>Sunday</th>
+                <td>CLOSED</td>
+              </tr>
+            ) : (
+              <tr>
+                <th>Sunday</th>
+                <td>CLOSED</td>
+              </tr>
+            )}
           </tbody>
         </table>
       </div>
